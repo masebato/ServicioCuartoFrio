@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+
 namespace ServicioCuartoFrio.Models
 {
     public class Variables
     {
+
+        
+        
         public int IdVariables { get; set; }
         public int PresionAlta { get; set; }
         public int PresionBaja { get; set; }
@@ -17,6 +21,7 @@ namespace ServicioCuartoFrio.Models
 
         public bool InsertarDato( Variables obj)
         {
+            string sql = "insert into variables values()"; 
             return 
         }
 

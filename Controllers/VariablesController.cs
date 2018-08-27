@@ -24,11 +24,21 @@ namespace ServicioCuartoFrio.Controllers
             {
                 if (var.InsertarDato(obj))
                 {
-
+                    return Json(new { data = obj, result = true });
+                }
+                else
+                {
+                    return Json(new { result = false });
                 }
 
             }
         } 
+
+        [HttpGet]
+        public IHttpActionRresult ConsultarVariables()
+        {
+           
+        }
 
     }
 }
